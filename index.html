@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetyana's Web Portfolio</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+            <button id="theme-toggle" class="card-button-secondary" aria-label="Toggle Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+         <nav>
+            <a target="_blank" href="https://github.com/tetyanamysak" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/tetyana-m-1b5363130/" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a> 
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+        <div class="hero-text">
+            <div class="intro-header">
+                <h1>TETYANA MYSAK</h1>
+                <p class="subtitle">Web Developer</p>
+            </div>
+                <p class="intro-description">
+                    I'm a web developer with a background running a freelance photography 
+                    business and working in the fast-paced baking industry. That mix taught 
+                    me to stay organized under pressure and pay close attention to detail. Those
+                    skills I now bring to building full-stack JavaScript applications, from 
+                    database logic to the pixels on screen.
+                </p>
+            <div class="links-container">
+                <a href="mailto:tanja.mysak@gmail.com">
+                     Email me
+                </a>
+                <a href="https://docs.google.com/document/d/1oJmYYq7BnsxREPBYD-1dc8Q5NVMyVE1XHAxkm0g2fsU/edit?usp=sharing" target="_blank">
+                     Resume
+                </a>
+                <a target="_blank" href="https://github.com/tetyanamysak">
+                     GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/tetyana-m-1b5363130/">
+                     LinkedIn</a>
+            </div>
+        </div>
+
+ <div class="game-container card square-game">
+    <div id="play-game">
+        <p>Want to see some DOM manipulation in action?</p>
+        <button id="start-game-btn">Play game</button>
+    </div>
+        <div id="color-div" class="hidden">
+            <h4>Pick a color</h4>
+            <input type="color" id="color-picker" value="#0084ff"/>
+            <p id="ruined-text" class="hidden">Great... now it's ruined!</p>
+            <button id="reset-btn" class="hidden">Reset</button>
+        </div>
+    </div>
+</section>
+
+        <section>
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>JavaScript | HTML5 | CSS Grid</td>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>Node.js | Express | EJS</td>
+                    </tr>
+                    <tr>
+                        <td>Tools & Design</td>
+                        <td>VS Code | Git | Lightroom | Canvas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Latest Projects</h2>
+            <div class="cards-grid">
+
+                <div class="project-card">
+                    <div>
+                        <p>August 2026</p>
+                        <h4>RecipeVault</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>Node.js</p></div>
+                            <div class="card-button-secondary"><p>Express</p></div>
+                            <div class="card-button-secondary"><p>EJS</p></div>
+                        </div>
+                        <p>A full-stack recipe manager with complete CRUD functionality. Create, edit, and delete recipes through 
+                            a JSON-backed persistence layer with automatic backups. </p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://youtu.be/keFojWBMr2Q">Live</a>
+                            <a target="_blank" href="https://github.com/tetyanamysak/recipe-vault">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="images/recipe-vault-homepage-with-recipes.png" alt="RecipeVault main view">
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div>
+                        <p>August 2026</p>
+                        <h4>TacoCraft</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>Node.js</p></div>
+                            <div class="card-button-secondary"><p>Express</p></div>
+                            <div class="card-button-secondary"><p>Vanilla JS</p></div>
+                        </div>
+                        <p>An interactive food-ordering app with 6 dynamic recipe options served through a custom REST API. 
+                            Features a shopping cart built from scratch, add/remove items, live quantity tracking, real-time totals with fully responsive layouts across mobile, tablet, and desktop.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://youtu.be/htr1WHMnBQI">Live</a>
+                            <a target="_blank" href="https://github.com/tetyanamysak/taco-town-vanilla-js">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="images/taco-craft-cart-with-items.png" alt="Taco Town main view">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div>
+                        <p>July 2026</p>
+                        <h4>Dev Blog</h4>
+                        <div class="tech-list">
+                            <div class="card-button-secondary"><p>Node.js</p></div>
+                            <div class="card-button-secondary"><p>Express</p></div>
+                            <div class="card-button-secondary"><p>EJS</p></div>
+                            <div class="card-button-secondary"><p>CSS Grid</p></div>
+                        </div>
+                        <p>A full-stack blog with dynamic routing, in-place post editing, and automatic "Edited" timestamp tracking 
+                            so readers can see when content was last updated. Includes a responsive, card-based UI and a custom 404 error page.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://youtu.be/7zOZvj-rFCE">Live</a>
+                            <a target="_blank" href="https://github.com/tetyanamysak/node-ejs-dev-journal/tree/master/my-express-app">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="img-div">
+                        <img class="big-img" src="images/dev-blog.png" alt="Dev Blog project preview">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>By Tetyana ⭐ the repo on <a target="_blank" href="https://github.com/tetyanamysak">GitHub</a></p>
+    </footer>
+</body>
+</html>
