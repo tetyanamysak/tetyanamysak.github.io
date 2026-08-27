@@ -68,3 +68,43 @@ function resetColor() {
     colorDiv.classList.add('hidden');
 }
 
+const videoOverlay = document.getElementById('video-overlay');
+const videoFrame = document.getElementById('video-frame');
+const videoCloseBtn = document.getElementById('video-close-btn');
+const projectImages = document.querySelectorAll('.img-div img[data-video]');
+
+projectImages.forEach((img) => {
+    img.addEventListener('click', () => openVideo(img.dataset.video));
+    img.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openVideo(img.dataset.video);
+        }
+    });
+});
+
+function openVideo(videoId) {
+    videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    videoOverlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeVideo() {
+    videoOverlay.classList.add('hidden');
+    videoFrame.src = '';
+    document.body.style.overflow = '';
+}
+
+videoCloseBtn.addEventListener('click', closeVideo);
+
+videoOverlay.addEventListener('click', (e) => {
+    if (e.target === videoOverlay) {
+        closeVideo();
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !videoOverlay.classList.contains('hidden')) {
+        closeVideo();
+    }
+});
