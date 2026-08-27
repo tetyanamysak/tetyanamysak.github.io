@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetyana's Web Portfolio</title>
-
+    <title>Tetyana Mysak</title>
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,52 +12,62 @@
 </head>
 <body>
     <header>
-        <button id="theme-toggle" class="card-button-secondary" aria-label="Toggle Dark Mode">
-            <i class="fa-solid fa-moon"></i>
-        </button>
-        <nav>
+            <button id="theme-toggle" class="card-button-secondary" aria-label="Toggle Dark Mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+         <nav>
             <a target="_blank" href="https://github.com/tetyanamysak" aria-label="GitHub">
                 <i class="fa-brands fa-github"></i>
             </a>
             <a target="_blank" href="https://www.linkedin.com/in/tetyana-m-1b5363130/" aria-label="LinkedIn">
                 <i class="fa-brands fa-linkedin"></i>
-            </a>
+            </a> 
         </nav>
     </header>
 
     <main>
         <section class="hero-section">
-            <div class="hero-text">
-                <div class="intro-header">
-                    <h1>TETYANA MYSAK</h1>
-                    <p class="subtitle">Web Developer</p>
-                </div>
+        <div class="hero-text">
+            <div class="intro-header">
+                <h1>TETYANA MYSAK</h1>
+                <p class="subtitle">Web Developer</p>
+            </div>
                 <p class="intro-description">
-                    I'm a web developer with a background running a freelance photography business and working in the fast-paced baking industry. That mix taught me to stay organized under pressure and pay close attention to detail. Those skills I now bring to building full-stack JavaScript applications, from database logic to the pixels on screen.
+                    I'm a web developer with a background running a freelance photography 
+                    business and working in the fast-paced baking industry. That mix taught 
+                    me to stay organized under pressure and pay close attention to detail. Those
+                    skills I now bring to building full-stack JavaScript applications, from 
+                    database logic to the pixels on screen.
                 </p>
-                <div class="links-container">
-                    <a href="mailto:tanja.mysak@gmail.com">Email me</a>
-                    <a href="https://docs.google.com/document/d/1oJmYYq7BnsxREPBYD-1dc8Q5NVMyVE1XHAxkm0g2fsU/edit?usp=sharing" target="_blank">Resume</a>
-                    <a target="_blank" href="https://github.com/tetyanamysak">GitHub</a>
-                    <a target="_blank" href="https://www.linkedin.com/in/tetyana-m-1b5363130/">LinkedIn</a>
-                </div>
+            <div class="links-container">
+                <a href="mailto:tanja.mysak@gmail.com">
+                     Email me
+                </a>
+                <a href="https://docs.google.com/document/d/1oJmYYq7BnsxREPBYD-1dc8Q5NVMyVE1XHAxkm0g2fsU/edit?usp=sharing" target="_blank">
+                     Resume
+                </a>
+                <a target="_blank" href="https://github.com/tetyanamysak">
+                     GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/tetyana-m-1b5363130/">
+                     LinkedIn</a>
             </div>
+        </div>
 
-            <div class="game-container card square-game">
-                <div id="play-game">
-                    <p>Want to see some DOM manipulation in action?</p>
-                    <button id="start-game-btn">Play game</button>
-                </div>
-                <div id="color-div" class="hidden">
-                    <h4>Pick a color</h4>
-                    <input type="color" id="color-picker" value="#0084ff"/>
-                    <p id="ruined-text" class="hidden">Great... now it's ruined!</p>
-                    <button id="reset-btn" class="hidden">Reset</button>
-                </div>
-            </div>
-        </section>
+ <div class="game-container card square-game">
+    <div id="play-game">
+        <p>Want to see some DOM manipulation in action?</p>
+        <button id="start-game-btn">Play game</button>
+    </div>
+        <div id="color-div" class="hidden">
+            <h4>Pick a color</h4>
+            <input type="color" id="color-picker" value="#0084ff"/>
+            <p id="ruined-text" class="hidden">Great... now it's ruined!</p>
+            <button id="reset-btn" class="hidden">Reset</button>
+        </div>
+    </div>
+</section>
 
-        <section class="skills-section">
+        <section>
             <h2>Skills</h2>
             <table>
                 <thead>
@@ -83,40 +93,42 @@
             </table>
         </section>
 
-        <section class="projects-section">
+        <section>
             <h2>Latest Projects</h2>
             <div class="cards-grid">
 
                 <div class="project-card">
                     <div>
-                        <p class="project-date">August 2026</p>
+                        <p>August 2026</p>
                         <h4>RecipeVault</h4>
                         <div class="tech-list">
                             <div class="card-button-secondary"><p>Node.js</p></div>
                             <div class="card-button-secondary"><p>Express</p></div>
                             <div class="card-button-secondary"><p>EJS</p></div>
                         </div>
-                        <p>A full-stack recipe manager with complete CRUD functionality — create, edit, and delete recipes through a JSON-backed persistence layer with automatic backups. Includes regex-based parsing that turns raw ingredient text into clean, structured lists.</p>
+                        <p>A full-stack recipe manager with complete CRUD functionality. Create, edit, and delete recipes through 
+                            a JSON-backed persistence layer with automatic backups. </p>
                         <div class="project-links">
                             <a target="_blank" href="https://youtu.be/keFojWBMr2Q">Live</a>
-                            <a target="_blank" href="https://github.com/tetyanamysak/my-recipe-book">GitHub</a>
+                            <a target="_blank" href="https://github.com/tetyanamysak/recipe-vault">GitHub</a>
                         </div>
                     </div>
                     <div class="img-div">
                         <img class="big-img" src="images/recipe-vault-homepage-with-recipes.png" alt="RecipeVault main view" data-video="keFojWBMr2Q" tabindex="0" role="button" aria-label="Play RecipeVault demo video">
                     </div>
                 </div>
-
+                
                 <div class="project-card">
                     <div>
-                        <p class="project-date">August 2026</p>
+                        <p>August 2026</p>
                         <h4>TacoCraft</h4>
                         <div class="tech-list">
                             <div class="card-button-secondary"><p>Node.js</p></div>
                             <div class="card-button-secondary"><p>Express</p></div>
                             <div class="card-button-secondary"><p>Vanilla JS</p></div>
                         </div>
-                        <p>An interactive food-ordering app with 6 dynamic recipe options served through a custom REST API. Features a shopping cart built from scratch — add/remove items, live quantity tracking, real-time totals — with fully responsive layouts across mobile, tablet, and desktop.</p>
+                        <p>An interactive food-ordering app with 6 dynamic recipe options served through a custom REST API. 
+                            Features a shopping cart built from scratch, add/remove items, live quantity tracking, real-time totals with fully responsive layouts across mobile, tablet, and desktop.</p>
                         <div class="project-links">
                             <a target="_blank" href="https://youtu.be/htr1WHMnBQI">Live</a>
                             <a target="_blank" href="https://github.com/tetyanamysak/taco-town-vanilla-js">GitHub</a>
@@ -129,7 +141,7 @@
 
                 <div class="project-card">
                     <div>
-                        <p class="project-date">July 2026</p>
+                        <p>July 2026</p>
                         <h4>Dev Blog</h4>
                         <div class="tech-list">
                             <div class="card-button-secondary"><p>Node.js</p></div>
@@ -137,7 +149,8 @@
                             <div class="card-button-secondary"><p>EJS</p></div>
                             <div class="card-button-secondary"><p>CSS Grid</p></div>
                         </div>
-                        <p>A full-stack blog with dynamic routing, in-place post editing, and automatic "Edited" timestamp tracking so readers can see when content was last updated. Includes a responsive, card-based UI and a custom 404 error page.</p>
+                        <p>A full-stack blog with dynamic routing, in-place post editing, and automatic "Edited" timestamp tracking 
+                            so readers can see when content was last updated. Includes a responsive, card-based UI and a custom 404 error page.</p>
                         <div class="project-links">
                             <a target="_blank" href="https://youtu.be/7zOZvj-rFCE">Live</a>
                             <a target="_blank" href="https://github.com/tetyanamysak/node-ejs-dev-journal/tree/master/my-express-app">GitHub</a>
@@ -152,19 +165,8 @@
         </section>
     </main>
 
-    <div id="video-overlay" class="video-overlay hidden">
-        <div class="video-modal">
-            <button id="video-close-btn" class="video-close-btn" aria-label="Close video">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div class="video-frame-wrapper">
-                <iframe id="video-frame" src="" title="Project demo video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
     <footer>
-        <p>By Tetyana ⭐️ the repo on <a target="_blank" href="https://github.com/tetyanamysak">GitHub</a></p>
+        <p>By Tetyana ⭐ the repo on <a target="_blank" href="https://github.com/tetyanamysak">GitHub</a></p>
     </footer>
 </body>
 </html>
