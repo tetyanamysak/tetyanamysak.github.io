@@ -84,7 +84,7 @@ projectImages.forEach((img) => {
 });
 
 function openVideo(videoId) {
-    videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    videoFrame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
     videoOverlay.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
 }
