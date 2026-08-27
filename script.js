@@ -67,3 +67,4 @@ function resetColor() {
     resetBtn.classList.add('hidden');
     colorDiv.classList.add('hidden');
 }
+
